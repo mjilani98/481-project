@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morning Brew & Bites — EagleEats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EagleEats</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="cafe.html">Cafe</a></li>
+        <li class="nav-item"><a class="nav-link" href="burgers.html">Burgers</a></li>
+        <li class="nav-item"><a class="nav-link" href="pizza.html">Pizza</a></li>
+        <li class="nav-item"><a class="nav-link" href="mediterranean.html">Mediterranean</a></li>
+      </ul>
+      <div class="ms-lg-3">
+        <a href="#" class="btn btn-dark position-relative">
+          Cart
+          <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="accent-bar accent-cafe"></div>
+<header class="py-5 bg-white border-bottom">
+  <div class="container">
+    <h1 class="fw-bold">Morning Brew & Bites</h1>
+    <p class="lead text-muted">Coffeehouse classics and grab‑and‑go breakfast favorites.</p>
+  </div>
+</header>
+
+<main class="container my-4">
+  <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://www.foodandwine.com/thmb/CCe2JUHfjCQ44L0YTbCu97ukUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg" class="card-img-top" alt="Classic Latte">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Coffee</div>
+              <h5 class="card-title mt-1">Classic Latte</h5>
+              <p class="card-text text-muted small flex-grow-1">Double espresso with steamed milk and silky foam.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$3.95</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://thecurlyspoonblog.com/wp-content/uploads/2022/04/avocado-toast-with-everything-bagel-seasoning-on-sourdough-featured-1.jpg" class="card-img-top" alt="Avocado Toast">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Breakfast</div>
+              <h5 class="card-title mt-1">Avocado Toast</h5>
+              <p class="card-text text-muted small flex-grow-1">Sourdough, smashed avo, chili flakes, lemon.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$6.50</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://www.sprinklesomesugar.com/wp-content/uploads/2016/07/IMG_8404-2.jpg" class="card-img-top" alt="Blueberry Muffin">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Bakery</div>
+              <h5 class="card-title mt-1">Blueberry Muffin</h5>
+              <p class="card-text text-muted small flex-grow-1">Buttery, fluffy, loaded with berries.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$2.95</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://lifemadesweeter.com/wp-content/uploads/Easy-Cold-Brew-Coffee-Recipe-Vegan-Dairy-Free-Paleo-Healthy.jpg" class="card-img-top" alt="Cold Brew">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Iced</div>
+              <h5 class="card-title mt-1">Cold Brew</h5>
+              <p class="card-text text-muted small flex-grow-1">Slow‑steeped for 16 hours. Smooth and bold.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$4.25</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://spicecravings.com/wp-content/uploads/2023/09/Greek-Yogurt-Parfait-Featured.jpg" class="card-img-top" alt="Greek Yogurt Parfait">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Healthy</div>
+              <h5 class="card-title mt-1">Greek Yogurt Parfait</h5>
+              <p class="card-text text-muted small flex-grow-1">Granola, honey, seasonal berries.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$4.95</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-item-card h-100">
+            <img src="https://the-kitchencoalition.com/wp-content/uploads/2024/05/22-20240130_164305.jpg" class="card-img-top" alt="Breakfast Burrito">
+            <div class="card-body d-flex flex-column">
+              <div class="kicker">Hearty</div>
+              <h5 class="card-title mt-1">Breakfast Burrito</h5>
+              <p class="card-text text-muted small flex-grow-1">Eggs, cheddar, potato, salsa roja.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$5.95</span>
+                <button class="btn btn-dark btn-sm" data-add>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </div>
+</main>
+
+<!-- Add to cart feature -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="addToast" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Added to cart.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 bg-light mt-5 border-top">
+  <div class="container text-center small text-muted">
+    <div>© 2025 EagleEats · Group 2</div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+
+  </body>
+</html>
