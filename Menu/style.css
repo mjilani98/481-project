@@ -48,3 +48,8 @@
   .accent-pizza{ background: linear-gradient(90deg, #f94144, #f8961e, #f9c74f); }
   .accent-med{ background: linear-gradient(90deg, #00a8e8, #00c49a, #b8e994); }
   
+  /*Cart Related Styles*/
+  .cart-container{
+    border: 50 px;
+
+  }
