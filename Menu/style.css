@@ -49,6 +49,7 @@
   .accent-med{ background: linear-gradient(90deg, #00a8e8, #00c49a, #b8e994); }
   
   /*Cart Related Styles*/
-  .price-container{
-    border-radius: 5px;
+  .checkout-box{
+    border:#ff4040;
+    border-radius: 50%;
   }
