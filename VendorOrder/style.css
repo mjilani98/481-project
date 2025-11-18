@@ -1,24 +1,132 @@
-        .order-card{
-    background: #ffffff; 
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 22px;
-    box-shadow: 0px 2px 7px rgba(0,0,0,0.1)
+/* EMU colors */
+.emu-green {
+    background-color: #006633; /* EMU dark green */
 }
 
-          .order-card h4 {
-    font-weight: 700;
+/* Page background */
+body {
+    background: linear-gradient(135deg, #ffffff, #e5f2ea);
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-        .order-status {
-    font-weight: bold
+/* eagle immage */
+.emu-header {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.   order-card:hover{
-    transform: translateY(-2px);  /* adding hover here*/
-    transition: 0.2s
+.emu-eagle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
-          body{
-    background-color: #f7f7f7
+.emu-header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,102,51,0.8), rgba(0,102,51,0.1));
+}
+
+.emu-header-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cards */
+.order-card {
+    background: #ffffff;
+    padding: 16px 18px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-left-color 0.18s ease;
+    border-left: 6px solid #ffc107; /* default = pending */
+}
+
+/* hovering effects */
+.order-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.19);
+}
+
+/* food pics */
+.food-img {
+    max-height: 120px;
+    object-fit: cover;
+}
+
+/* status line */
+.order-status {
+    font-weight: bold;
+}
+
+/* Status pill */
+.status-pill {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* diff colors w the diff status */
+.order-card.accepted {
+    border-left-color: #28a745;
+}
+
+.order-card.completed {
+    border-left-color: #0d6efd;
+}
+
+.order-card.cancelled {
+    border-left-color: #dc3545;
+    opacity: 0.88;
+}
+
+/* "Eagle wing"  */
+.emu-btn {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+/* main green */
+.emu-btn-main {
+    background-color: #006633;
+    color: #ffffff;
+}
+
+
+.emu-btn-outline {
+    background-color: #ffffff;
+    color: #006633;
+    border-color: #006633;
+}
+
+/* red */
+.emu-btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* hovering */
+.emu-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.93;
+}
+
+/* teaks */
+@media (max-width: 576px) {
+    .order-card {
+        padding: 12px 12px;
+    }
 }
