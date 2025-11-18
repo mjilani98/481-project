@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Home</title>
+    <link rel="stylesheet" href="vendor_home.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">Vendor Dashboard</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="vendor-info">
+        <h2 id="vendorName">The EMU Restaurant</h2>
+        <p class="subtitle">Manage your menu, orders, and business settings.</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <h3>Pending Orders</h3>
+            <p id="pendingCount" class="stat-value">8</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Orders Today</h3>
+            <p id="totalOrders" class="stat-value">27</p>
+        </div>
+        <div class="stat-card">
+            <h3>Revenue</h3>
+            <p id="revenue" class="stat-value">$340.45</p>
+        </div>
+    </section>
+
+    <section class="actions">
+        <button class="primary-btn" onclick="goToOrders()">View Orders</button>
+        <button class="secondary-btn" onclick="addMenuItem()">Add Menu Item</button>
+        <button class="secondary-btn" onclick="editProfile()">Edit Profile</button>
+    </section>
+
+    <section class="menu-section">
+        <h2>Menu Items</h2>
+        <ul id="menuList" class="menu-list">
+            <!-- JS will load items -->
+        </ul>
+    </section>
+
+    <script src="vendor_home.js"></script>
+</body>
+</html>

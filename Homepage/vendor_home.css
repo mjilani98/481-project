@@ -1,0 +1,138 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    color: #222;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background: #B03119;
+    color: white;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #ff5c5c;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+/* VENDOR INFO */
+.vendor-info {
+    padding: 20px 24px;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 4px;
+}
+
+/* STATS ROW */
+.stats {
+    display: flex;
+    gap: 16px;
+    padding: 16px 24px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    width: 170px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.stat-value {
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #B03119;
+}
+
+/* ACTION BUTTON SECTION */
+.actions {
+    padding: 16px 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.primary-btn {
+    background: #B03119;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background: #eee;
+    color: #333;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 20px 24px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.menu-item span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.toggle-btn {
+    background: #ddd;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-btn.available {
+    background: #4CAF50;
+    color: white;
+}
+
+.toggle-btn.unavailable {
+    background: #c44536;
+    color: white;
+}
