@@ -43,61 +43,88 @@
             </header>
         </ul>
 
-        <form class="row p-5 g-3" id="checkout-box">
-            <div>Billing Address</div>
-            <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="name" class="form-control" id="firstName">
-            </div>
-            <div class="col-md-6">
-                <label for="lastName" class="form-label">Last name</label>
-                <input type="name" class="form-control" id="lastName">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>Michigan</option>
-                <option>Maine</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            
-            <div>Payment</div>
-            <div class="nameonCard">
-                <label for="nameOnCard" class="form-label">Name</label>
-                <input type="name" class="form-control" id="nameOnCard">
-            </div>
-            <div class="row g-3">
-                <div class="col-sm-8">
-                    <label for="cardNumber" class="form-label">Card Number</label>
-                    <input type="name" class="form-control" id="firstName" placeholder="xxxx-xxxx-xxxx-xxxx">
+        <div class="div">
+            <table class="table">
+                <div class="row g-4">
+                    <div class="col-sm p-5">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Campus Classic">
+                    </div>
+                    <div class="col-sm align-self-center mr-3">
+                        Burger
+                    </div>
+                    <div class="col-sm align-self-center mr-3">
+                        7.99
+                    </div>
+                    <div class="col-sm align-self-center mr-3">
+                        <button class="btn btn-dark btn-sm" data-add>Remove Item</button>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <label for="ccvNumber" class="form-label">CCV</label>
-                    <input type="name" class="form-control" id="ccvNumber" placeholder="xxx">
+            </table>
+        </div>
+
+        <div class="price-container p-4">
+            <p>Subtotal:</p>
+            <p>Tax:</p>
+            <h3>Total:</h3>
+        </div>
+
+        <div class="payment">
+            <form class="row p-5 g-3" id="checkout-box">
+                <div>Billing Address</div>
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="name" class="form-control" id="firstName">
                 </div>
-                <div class="col-sm">
-                    <label for="expireDate" class="form-label">Expiration</label>
-                    <input type="date" class="form-control" id="expireDate">
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="name" class="form-control" id="lastName">
                 </div>
-            </div>
-        </form>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Michigan</option>
+                    <option>Maine</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                
+                <div>Payment</div>
+                <div class="nameonCard">
+                    <label for="nameOnCard" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="nameOnCard">
+                </div>
+                <div class="row g-3">
+                    <div class="col-sm-8">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="col-sm">
+                        <label for="ccvNumber" class="form-label">CCV</label>
+                        <input type="name" class="form-control" id="ccvNumber" placeholder="xxx">
+                    </div>
+                    <div class="col-sm">
+                        <label for="expireDate" class="form-label">Expiration</label>
+                        <input type="date" class="form-control" id="expireDate">
+                    </div>
+                </div>
+            </form>
+        </div>
 
         <div class="p-5">
             <button class="btn btn-dark btn-sm" data-add>Proceed to Purchase</button>
