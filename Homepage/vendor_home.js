@@ -41,18 +41,26 @@ function toggleAvailability(id) {
 }
 
 // PAGE ACTIONS
+// Go to Orders page (already working)
 function goToOrders() {
-    alert("Redirecting to vendor orders page...");
+    window.location.href = "burgers.html";
 }
 
-function addMenuItem() {
-    alert("Open add menu item form...");
+// Go to Menu Management page
+function goToMenu() {
+    window.location.href = "menu.html";
 }
 
-function editProfile() {
-    alert("Redirecting to vendor profile settings...");
+// Go to Account Settings page
+function goToAccount() {
+    window.location.href = "account.html";
 }
 
+// LOGOUT FUNCTION
 function logout() {
-    alert("Logging out...");
+    // Clear stored session (if any)
+    localStorage.removeItem("loggedIn");
+
+    // Redirect to login page
+    window.location.href = "login.html";
 }

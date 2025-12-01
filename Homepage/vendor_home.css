@@ -1,138 +1,50 @@
-/* GENERAL */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fdfdfd;
-    color: #222;
+/* Matching green from burgers.html */
+.bg-green {
+    background-color: #006644 !important;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-/* HEADER */
-.header {
-    background: #B03119;
-    color: white;
-    padding: 18px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.logout-btn {
-    background: #ff5c5c;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-}
-
-/* VENDOR INFO */
-.vendor-info {
-    padding: 20px 24px;
-}
-
-.subtitle {
-    color: #666;
-    margin-top: 4px;
-}
-
-/* STATS ROW */
-.stats {
-    display: flex;
-    gap: 16px;
-    padding: 16px 24px;
-}
-
-.stat-card {
-    background: white;
-    border-radius: 8px;
-    padding: 16px;
-    width: 170px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+/* Header section */
+.dashboard-header {
+    background: linear-gradient(rgba(0, 102, 68, 0.8), rgba(0, 102, 68, 0.8)),
+                url('https://images.unsplash.com/photo-1603048297172-059e719c0a02?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
     text-align: center;
 }
 
-.stat-value {
-    margin-top: 6px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #B03119;
-}
-
-/* ACTION BUTTON SECTION */
-.actions {
-    padding: 16px 24px;
-    display: flex;
-    gap: 10px;
-}
-
-.primary-btn {
-    background: #B03119;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
+/* Dashboard Cards */
+.dashboard-card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
     cursor: pointer;
-}
-
-.secondary-btn {
-    background: #eee;
-    color: #333;
     border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* MENU SECTION */
-.menu-section {
-    padding: 20px 24px;
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
 }
 
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 14px;
+.card-icon {
+    font-size: 40px;
+    color: #006644;
 }
-
-.menu-item {
+.login-screen {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.login-box {
+    width: 300px;
     background: white;
-    padding: 14px 16px;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    text-align: center;
 }
 
-.menu-item span {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.toggle-btn {
-    background: #ddd;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.toggle-btn.available {
-    background: #4CAF50;
-    color: white;
-}
-
-.toggle-btn.unavailable {
-    background: #c44536;
-    color: white;
-}
